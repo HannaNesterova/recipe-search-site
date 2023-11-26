@@ -17,7 +17,7 @@ font-family: 'Roboto', sans-serif; */
   color: aliceblue;
 }
 .main_page-title{
-  padding-top: 125px;
+  padding-top: 100px;
   width: 600px;
   color: white;
   font-size: 20px;
@@ -38,18 +38,37 @@ input{
   padding: 10px;
   border-radius: 20px;
   border: none;
-  background-color: rgba(255, 255, 255, 0.27);
-  color: aliceblue;
+  background-color: transparent;
+  color: #ffffff;
+  border: 3px solid white;
 }
+
 button{
   width: 80px;
   padding: 10px;
   border-radius: 20px;
-  color: #1E4325;
-  border: none;
+  color: #ffffff;
+  border: 3px solid white;
   margin-left: 10px;
+  background-color: transparent;
+  cursor: pointer;
 }
 .input-container{
   display: flex;
+  justify-content: center;
+}
+
+.recipes_main-container{
+  padding: 30px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  background-color: rgb(240, 248, 255);
+}
+
+.box-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }

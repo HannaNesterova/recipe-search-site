@@ -1,5 +1,6 @@
 import './App.css';
-import image from '../src/img/02.jpeg'
+import image from '../src/img/04.jpeg'
+import Recipes from './Recipes';
 
 function MainPage(){
 
@@ -18,6 +19,7 @@ return(
             </form>
         </div>
     </div>
+    <Recipes />
 </div>
 )
 }
