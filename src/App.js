@@ -1,11 +1,10 @@
 import './App.css';
+import MainPage from './MainPage';
 
 function App() {
   return (
     <div>
-
-      <h1>This brilliant cooking site solves the biggest problem with recipes
-      </h1>
+      <MainPage />
     </div>
   );
 }

@@ -2,3 +2,54 @@
 font-family: 'Inter', sans-serif;
 font-family: 'Pacifico', cursive;
 font-family: 'Roboto', sans-serif; */
+.main_page-container{
+  margin: 20px 100px;
+}
+
+.logo_text{
+  font-family: 'Inter', sans-serif;
+  color: aliceblue;
+  font-size: 20px;
+}
+
+.logo_text span{
+  font-family: 'Pacifico', cursive;
+  color: aliceblue;
+}
+.main_page-title{
+  padding-top: 125px;
+  width: 600px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin: auto;
+}
+.main-img{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+input{
+  width: 300px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.27);
+  color: aliceblue;
+}
+button{
+  width: 80px;
+  padding: 10px;
+  border-radius: 20px;
+  color: #1E4325;
+  border: none;
+  margin-left: 10px;
+}
+.input-container{
+  display: flex;
+  justify-content: center;
+}
