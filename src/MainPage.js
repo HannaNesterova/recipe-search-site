@@ -3,11 +3,17 @@ import image from '../src/img/04.jpg'
 
 
 
+
 function MainPage(props){
+    //const [word, setWord] = useState('apple'); //кнопка пошуку
 
 const myRecipeSearch = (e) => {
-console.log(e.target.value)
 props.setSearch(e.target.value);
+}
+
+const finalSearch = (e) =>{
+    e.preventDefault(); 
+    props.setWord(props.search);
 }
 
 return(
@@ -19,7 +25,7 @@ return(
             <h1>This brilliant <span>cooking</span> site  solves the biggest <span className='span_second'>problem</span> with recipes</h1>
         </div>
         <div className='input-container'>
-            <form>
+            <form onSubmit={finalSearch}>
                 <input placeholder='I have a...' onChange={myRecipeSearch} value={props.search}/>
                 <button>CLICK</button>
             </form>

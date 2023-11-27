@@ -9,7 +9,7 @@ return(
             <img src={props.image} alt='img'/>
             <p>{props.calories} calories</p>
             <h6>{props.label}</h6>
-            <ul>{props.ingredientLines && props.ingredientLines.map(item => (
+            <ul >{props.ingredientLines && props.ingredientLines.map(item => (
                 <li>{item}</li>
             ))}
 
