@@ -4,6 +4,10 @@ import Recipes from './Recipes';
 
 function MainPage(){
 
+const myRecipeSearch = (e) => {
+console.log(e.target.value)
+}
+
 return(
 <div>
     <img className='main-img' src={image} alt='main-img'/>
@@ -14,7 +18,7 @@ return(
         </div>
         <div className='input-container'>
             <form>
-                <input placeholder='I have a...' />
+                <input placeholder='I have a...' onChange={myRecipeSearch}/>
                 <button>CLICK</button>
             </form>
         </div>
