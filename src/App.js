@@ -30,8 +30,9 @@ function App() {
       setWord={setWord}/>
 
       <div className='flex-rec'>
-      {recipes.map(item => (
-        <Recipes  image={item.recipe.image} 
+      {recipes.map((item, id) => (
+        <Recipes key={id}
+        image={item.recipe.image} 
         label={item.recipe.label} 
         calories={item.recipe.calories.toFixed()} 
         ingredientLines={item.recipe.ingredientLines}/>
