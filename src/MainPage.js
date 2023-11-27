@@ -1,8 +1,11 @@
 import './App.css';
 import image from '../src/img/04.jpg'
 import Recipes from './Recipes';
+import { useState } from 'react';
 
 function MainPage(){
+
+const [search, setSearch] = useState('');
 
 const myRecipeSearch = (e) => {
 console.log(e.target.value)
