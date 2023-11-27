@@ -1,5 +1,5 @@
 import './App.css';
-import image from '../src/img/04.jpeg'
+import image from '../src/img/04.jpg'
 import Recipes from './Recipes';
 
 function MainPage(){
@@ -10,7 +10,7 @@ return(
     <div className='main_page-container'>
         <h3 className='logo_text'> ᧟ Food<span>Hub</span></h3>
         <div className='main_page-title'>
-            <h1>This brilliant cooking site  solves the biggest problem with recipes</h1>
+            <h1>This brilliant <span>cooking</span> site  solves the biggest <span className='span_second'>problem</span> with recipes</h1>
         </div>
         <div className='input-container'>
             <form>
