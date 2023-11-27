@@ -1,14 +1,13 @@
 import './App.css';
 import image from '../src/img/04.jpg'
-import Recipes from './Recipes';
-import { useState } from 'react';
 
-function MainPage(){
 
-const [search, setSearch] = useState('');
+
+function MainPage(props){
 
 const myRecipeSearch = (e) => {
 console.log(e.target.value)
+props.setSearch(e.target.value);
 }
 
 return(
@@ -21,12 +20,11 @@ return(
         </div>
         <div className='input-container'>
             <form>
-                <input placeholder='I have a...' onChange={myRecipeSearch}/>
+                <input placeholder='I have a...' onChange={myRecipeSearch} value={props.search}/>
                 <button>CLICK</button>
             </form>
         </div>
     </div>
-    <Recipes />
 </div>
 )
 }

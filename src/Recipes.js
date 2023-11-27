@@ -1,23 +1,23 @@
 import './App.css';
 
-import testImg from './img/03.jpeg';
 
-function Recipes(){ 
+function Recipes(props){ 
 return(
+
     <div className='recipes_main-container'>
         <div className='box-container'>
-            <img src={testImg}/>
-            <h6>TEST</h6>
-            <ul>
-                <li>test</li>
-                <li>test</li>
-                <li>test</li>
-                <li>test</li>
-                <li>test</li>
+            <img src={props.image} alt='img'/>
+            <p>{props.calories} calories</p>
+            <h6>{props.label}</h6>
+            <ul>{props.ingredientLines && props.ingredientLines.map(item => (
+                <li>{item}</li>
+            ))}
+
             </ul>
             <button>🔽</button>
         </div>
     </div>
+
 )
 }
 

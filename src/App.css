@@ -61,15 +61,21 @@ button{
   display: flex;
   justify-content: center;
 }
+.flex-rec{
+  display: flex;
+  margin: 0px 30px;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
 
 .recipes_main-container{
   padding: 30px 30px;
-  display: flex;
-  flex-wrap: wrap;
   gap: 40px;
   background-color: #f9fbfada;
   margin-top: 170px;
-}
+  width: 350px;
+} 
 
 .box-container{
   display: flex;
