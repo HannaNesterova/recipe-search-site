@@ -117,3 +117,20 @@ color: #A1B5B5;
 -webkit-text-stroke: 1px #090B0A;
 text-stroke: 1px #090B0A;
 }
+
+
+@media all and (max-width:500px){
+  .main_page-container{
+    margin: 0px 25px;
+  }
+  .main_page-title{
+    width: 300px;
+    text-align: center;
+  }
+  h1{
+    font-size: 40px;
+  }
+  input{
+    width: 200px;
+  }
+}

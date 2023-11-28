@@ -28,7 +28,7 @@ return(
         </div>
         <div className='input-container'>
             <form onSubmit={finalSearch}>
-                <input placeholder='I have a...' onChange={myRecipeSearch} value={search}/>
+                <input placeholder='Put here your ingredient...' onChange={myRecipeSearch} value={search}/>
                 <button>CLICK</button>
             </form>
         </div>
