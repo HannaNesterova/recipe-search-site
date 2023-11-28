@@ -1,19 +1,21 @@
+import { useState } from 'react';
+
 import './App.css';
 import image from '../src/img/04.jpg'
 
 
 
 
-function MainPage(props){
-    //const [word, setWord] = useState('apple'); //кнопка пошуку
+function MainPage({setWord}){
+const [search, setSearch] = useState(''); //input
 
 const myRecipeSearch = (e) => {
-props.setSearch(e.target.value);
+setSearch(e.target.value);
 }
 
 const finalSearch = (e) =>{
     e.preventDefault(); 
-    props.setWord(props.search);
+    setWord(search);
 }
 
 return(
@@ -26,7 +28,7 @@ return(
         </div>
         <div className='input-container'>
             <form onSubmit={finalSearch}>
-                <input placeholder='I have a...' onChange={myRecipeSearch} value={props.search}/>
+                <input placeholder='I have a...' onChange={myRecipeSearch} value={search}/>
                 <button>CLICK</button>
             </form>
         </div>

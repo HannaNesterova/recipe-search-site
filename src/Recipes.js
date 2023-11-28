@@ -9,8 +9,8 @@ return(
             <img src={props.image} alt='img'/>
             <p>{props.calories} calories</p>
             <h6>{props.label}</h6>
-            <ul>{props.ingredientLines && props.ingredientLines.map((item, id) => (
-                <li key={id}>{item}</li>
+            <ul>{props.ingredientLines && props.ingredientLines.map((item, index) => (
+                <li key={index}>{item}</li>
             ))}
             </ul>
         </div>

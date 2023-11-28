@@ -5,7 +5,6 @@ import Recipes from './Recipes';
 
 function App() {
 
-  const [search, setSearch] = useState(''); //input
   const [recipes, setRecipes] = useState([]); //рецепти
   const [word, setWord] = useState(''); //кнопка пошуку
 
@@ -24,13 +23,12 @@ function App() {
 
   return (
     <div>
-      <MainPage search={search} 
-      setSearch={setSearch} 
+      <MainPage
       setWord={setWord}/>
 
       <div className='flex-rec'>
-      {recipes.map((item, id) => (
-        <Recipes key={id}
+      {recipes.map((item, index) => (
+        <Recipes key={index}
         image={item.recipe.image} 
         label={item.recipe.label} 
         calories={item.recipe.calories.toFixed()} 
